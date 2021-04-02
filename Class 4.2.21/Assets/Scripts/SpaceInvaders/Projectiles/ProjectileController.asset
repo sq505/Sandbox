@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: ProjectileController
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-290.5713,"y":-161.6428},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-603.0,"y":-249.0},"guid":"8b9862c1-816d-4587-8096-b627427c4d49","$version":"A","$type":"Bolt.Update","$id":"9"},{"chainable":false,"member":{"name":"GetKey","parameterTypes":["UnityEngine.KeyCode"],"targetType":"UnityEngine.Input","targetTypeName":"UnityEngine.Input","$version":"A"},"defaultValues":{"%key":{"$content":"None","$type":"UnityEngine.KeyCode"}},"position":{"x":-419.0,"y":-249.0},"guid":"ef89c444-9b4c-4d9f-8900-3ef4c8b75e36","$version":"A","$type":"Bolt.InvokeMember","$id":"11"},{"defaultValues":{},"position":{"x":-257.0,"y":-249.0},"guid":"c69e1384-1701-4646-8c26-b2b5f878ffa1","$version":"A","$type":"Bolt.Branch","$id":"14"},{"argumentCount":0,"defaultValues":{"name":{"$content":"Shoot","$type":"System.String"},"target":null},"position":{"x":-110.0,"y":-268.0},"guid":"f860bff1-7fd9-4be5-940b-134eb5070691","$version":"A","$type":"Bolt.TriggerCustomEvent","$id":"16"},{"specifyFallback":false,"kind":"Scene","defaultValues":{"name":{"$content":"ShootKey","$type":"System.String"}},"position":{"x":-604.0,"y":-157.0},"guid":"5771e403-84b0-4f36-a628-9e7f76d800e9","$version":"A","$type":"Bolt.GetVariable","$id":"18"},{"sourceUnit":{"$ref":"9"},"sourceKey":"trigger","destinationUnit":{"$ref":"11"},"destinationKey":"enter","guid":"392c26c4-e177-4487-ada0-169d52e2901b","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"11"},"sourceKey":"exit","destinationUnit":{"$ref":"14"},"destinationKey":"enter","guid":"be272acd-a3db-4160-8cb3-46e6811911ab","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"ifTrue","destinationUnit":{"$ref":"16"},"destinationKey":"enter","guid":"ddd75740-51a8-4913-be0a-b75e98d0b3ee","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"11"},"sourceKey":"result","destinationUnit":{"$ref":"14"},"destinationKey":"condition","guid":"d2e6314b-c182-4d74-b8e4-b1e793450c4f","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"18"},"sourceKey":"value","destinationUnit":{"$ref":"11"},"destinationKey":"%key","guid":"7565409d-16d1-416d-a66d-5744cc2662cd","$type":"Bolt.ValueConnection"},{"position":{"xMin":-642.7142,"yMin":-355.5714,"xMax":61.57159,"yMax":32.28583},"label":"Shoot
+      Controller","comment":null,"color":{"r":0.0,"g":0.0,"b":0.0,"a":1.0},"guid":"a6cb8a8b-9170-4165-af26-17cd9b165be5","$version":"A","$type":"Ludiq.GraphGroup"}],"$version":"A"}}'
+    _objectReferences: []
